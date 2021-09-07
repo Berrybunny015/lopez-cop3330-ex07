@@ -20,9 +20,8 @@ public class App {
 
         int areaSquareFeet = length * width; //find the area in square feet
         double areaSquareMeters = areaSquareFeet * conversionFactor; //find the area in square meters
-        DecimalFormat decimalFormat = new DecimalFormat("###.###"); //round up the area in square meters to max 3 decimals
 
-        System.out.println("The area is \n" + areaSquareFeet + " square feet \n" + decimalFormat.format(areaSquareMeters) + " square meters"); //output #4
+        System.out.println("The area is \n" + areaSquareFeet + " square feet \n" + String.format("%.3f", areaSquareMeters) + " square meters"); //output #4
 
     }
 }
